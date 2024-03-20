@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div class="left">Omkar Shinde</div>
+      <div class="right">
+        <ul>
+          <li><a href="#firstsection" class="active">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#secondsection">Project</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <section id="firstsection">
+      <div class="leftsection">
+        Hi, MY name is <span class="purple">Omkar</span>
+        <div>and I am a passionate</div>
+        <span id="element"></span>
+      </div>
+      <div class="rightsection">
+        <img src="./image/bs.png" alt="image" />
+      </div>
+    </section>
+    
+    <section id="about">
+      <div class="main">
+          <div class="about-text">
+              <h1>About Me</h1>
+              <h5> Software Engineering<span> & Developer</span></h5>
+              <p>
+                  Name:<span> Shinde Omkar</span><br>
+                  College:<span> G.H.Raisoni College of Engineering & Management</span><br>
+                  Branch:<span> Computer Engineering</span><br>
+                  <h6>As a Computer Engineering, I aim to apply my technical skills and problem-solving abilities to
+                  contribute effectively in software development. Seeking a position that fosters professional 
+                  growth and allows me to be part of innovative projects within a dynamic team environment.</h6>
+              </p>
+                  <button onclick="window.location.href='https://in.linkedin.com/in/omkar-shinde-7a34b0268;'">LinkedIN</button>
+                  <button onclick="window.location.href='https://github.com/omkarshinde14;'">GitHub</button>
+
+          </div>
+      </div>
+  </section>
+  
+  <section id="skills">
+    <div class="container">
+        <h1 class="heading">Skills</h1>
+
+        <div class="box-container">
+            <div class="box">
+                <img src="./image/html.webp" alt="">
+                <h3>HTML 5</h3>
+                <P>HTML(Hypertext Markup Language)<br>
+                    is used forcreating and structuring<br> 
+                    content for web pages on the internet.</P>
+            </div>
+            <div class="box">
+                <img src="./image/CSS.jpeg" alt="">
+                <h3>CSS</h3>
+                <P>CSS, which stands for Cascading<br>
+                   Style Sheets, is used for styling<br>
+                   web documents written in HTML and XML.</P>
+            </div>
+            <div class="box">
+                <img src="./image/Javascript.png" alt="">
+                <h3>JavaScript</h3>
+                <P>JavaScript is used primarily<br> 
+                   for web development, enabling<br> 
+                   interactive and dynamic features<br> 
+                   on websites, including animations</P>
+            </div>
+            <div class="box">
+                <img src="./image/Python.jpeg" alt="">
+                <h3>Python</h3>
+                <P>Python is a versatile<br> 
+                   programming language<br>
+                   used in various domains<br>
+                   due to its simplicity, readability.</p>
+            </div>
+            <div class="box">
+                <img src="./image/java.webp" alt="">
+                <h3>Java</h3>
+                <P>Java is primarily used for<br>
+                   developing applications and<br> 
+                   large-scale systems,<br>
+                   including web applications.</P>
+            </div>
+            <div class="box">
+                <img src="./image/Sql.jpg" alt="">
+                <h3>SQL</h3>
+                <P>SQL (Structured Query Language)<br> 
+                   is primarily used for managing<br>
+                   and manipulating relational databases.</P>
+            </div>
+            <div class="box">
+                <img src="./image/PostgreSQL.jpeg" alt="">
+                <h3>PostgreSQL</h3>
+                <P>PostgreSQL is used as a<br> 
+                   relational database management<br> 
+                   system primarily for storing and<br>
+                   managing structured data</P>
+            </div>
+            <div class="box">
+                <img src="./image/Data.jpg" alt="">
+                <h3>Data Structure</h3>
+                <P>A data structure is used for<br>
+                   organizing, storing, and managing<br> 
+                   data efficiently to facilitate operations.</P>
+            </div>
+        </div>
+    </div>
+</section>
+    
+    <section id="secondsection">
+      <span class="text-grey">What I have done so far</span>
+      <h1>Project</h1>
+      <h2>
+        E-bike store :<a href="https://ebikestore.tech "><b>https://ebikestore.tech</b></a>
+      </h2>
+      <p>Tool and Framwork Used</p>
+
+    <section id="thirdsection">
+      <div class="leff">
+        <p class="text">
+          <b><i>Details of  My Project:</i></b><br>
+          The EBikeStore is a comprehensive web platform designed to provide users with information about electric bikes
+          and scooters available in India.<br>
+          Dynamic Database (500+ vehicles) with regularly updated electric two-wheeler information.<br>
+          Fabricated using Django, ReactJS, Docker, and AWS for hosting.<br>
+          Data about bikes scraped from multiple sites with the help of Python (beautifulsoup, selenium, etc.)
+        </p>
+      </div>
+      <div class="righh">
+        <img src="./image/bike.png" alt="image" />
+      </div>
+
+    </section>
+    <footer id="contact">
+      <a href="https://www.instagram.com/omkar_shinde_0063/?hl=en"><i class="fa-brands fa-instagram"></i></a>
+      <a href="https://in.linkedin.com/in/omkar-shinde-7a34b0268"><i class="fa-brands fa-linkedin-in"></i></a>
+      <a href="https://github.com/omkarshinde14"><i class="fa-brands fa-github"></i></a>
+      <p>&copy; Shinde Omkar | Web Developer</p>
+  </footer>
+  </main>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed("#element", {
+      strings: ["Web Designer", " Web Developer"],
+      typeSpeed: 80,
+    });
+  </script>
+  <script src="script.js"></script>
+  <script src="https://kit.fontawesome.com/0aa3280b35.js" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
